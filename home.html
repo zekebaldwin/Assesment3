@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<div id="div">
+    <form name="form" id="form" method="POST" action="/convert">
+        <input type="text" class="input" name="topText" id="topText" placeholder="Converting From">
+        <br>
+        <input type="text" class="input" name="middleText" id="middleText" placeholder="Converting To">
+        <br>
+        <input type="text" class="input" name="bottomText" id="bottomText" placeholder="Amount">
+        <br>
+        <button>Submit</button>
+    </form>
+</div>
+
+{% endblock %}

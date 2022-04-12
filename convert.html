@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+    <p>
+        {% if err %}
+        {{err}}
+        {% endif %}
+    </p>
+    <p>
+        {% if answer %}
+        The result is {{symbol}}{{answer}}
+        {% endif %}
+    </p>
+    <form action="/">
+        <button>Home</button>
+    </form>
+</div>
+{% endblock %}
